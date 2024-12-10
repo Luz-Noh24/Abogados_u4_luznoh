@@ -1,0 +1,944 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --letranorm:Montserrat, sans-serif;
+    --letrati:Playfair,serif;
+    --gris:#BEBEBE;
+    --negro:#3C3C3C;
+    --grisdoscua:#686157;
+    --blaco:#fff;
+    --mora:#615768;
+    --axul:#6A76A1;
+    --a2:#2a3066 ;
+
+
+}
+
+.ancho
+{
+    max-width: 1200px;
+    margin: auto;
+}
+body 
+{
+    font-family: var(--letranorm);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   background-color: #f4f4f4;
+  }
+
+  .contact-header 
+  {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+    align-items: center; /* Centra verticalmente */
+    background-color:var(--negro); /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 5px; /* Espaciado interno más grande */
+    font-size: 24px; /* Tamaño de fuente más grande */
+  }
+  
+  .contact-info 
+  {
+    color: var(--gris);
+    display: flex;
+    gap: 30px; /* Espaciado mayor entre elementos */
+  }
+  
+  .contact-info span 
+  {
+    color: var(--gris);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre íconos y texto */
+  }
+  
+  .contact-info i 
+  {
+    color: var(--gris);
+  }
+  
+  .social-icons 
+  {
+    display: flex; /* Alinea los íconos en una fila */
+    gap: 20px; /* Espaciado entre íconos */
+  }
+  
+  .social-icons a 
+  {
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 24px; /* Aumenta el tamaño de los íconos */
+  }
+  
+  .social-icons a:hover 
+  {
+    color: #1e90ff; /* Color al pasar el cursor */
+  }
+  .prueba {
+    background-image: url('imagenes/backgund.jpg');
+    background-size: cover; /* Ajusta la imagen sin recortarla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija el fondo para el efecto parallax */
+    background-position: center; /* Asegura que la imagen se centre */
+    height: 900px; /* Altura del contenedor */
+}
+
+
+.pruebita
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#icono {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4048;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#caja {
+    display: block;
+}
+nav{
+    font-size: 15px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4048;
+    border-bottom: 2px solid --gris;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de arriba hacia abajo */
+    align-items: flex-end; /* Alinea todos los elementos a la derecha */
+    justify-content: center; /* Centra los elementos verticalmente */
+    color: white;
+    padding: 20px;
+    width: 40%; /* Ajusta el tamaño del cuadro */
+    max-width: 500px; /* Maxima anchura */
+    text-align: right; /* Asegura que el texto se alinee a la derecha */
+    margin-left: auto; /* Empuja el cuadro hacia la derecha */
+    margin-right: 0; /* Asegura que no haya margen a la derecha */
+}
+
+/* Título */
+.title {
+    font-family: var(--letrati);
+    font-size: 60px;
+    font-weight: 1200px;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #6A76A1;
+}
+
+/* Botón */
+.cta-button {
+    background-color: #ff4048;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.cta-button:hover {
+    background-color: #d6333c;
+}
+
+/* Contenedor principal */
+.services {
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Contenedor de los artículos */
+.serv-cont {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a diferentes tamaños de pantalla */
+    gap: 20px; /* Espaciado entre los artículos */
+    justify-content: center; /* Centra los artículos horizontalmente */
+}
+
+/* Cada artículo individual */
+.services article {
+    background: white; /* Fondo blanco para cada tarjeta */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 20px; /* Espaciado interno */
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    text-align: center; /* Centra el contenido dentro de cada tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el cursor */
+}
+
+/* Íconos */
+.services article i {
+    font-size: 40px; /* Tamaño del ícono */
+    color: var(--grisdoscua); /* Color de los íconos */
+    margin-bottom: 10px; /* Espaciado debajo del ícono */
+}
+
+/* Título */
+.services article h3 {
+    font-family: var(--letrati);
+    font-size: 20px; /* Tamaño de fuente del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+/* Descripción */
+.services article p {
+    font-size: 16px; /* Tamaño de fuente del párrafo */
+    color: #666; /* Color del texto */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+/* Efecto hover */
+.services article:hover {
+    transform: scale(2.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+}
+
+/* Estilo general de la sección */
+.team-profiles {
+    padding: 20px;
+    text-align: center;
+    /* background-color: var(--grisdoscua); */
+}
+
+.profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.general
+{
+    border: 2px solid #ccc; /* Borde gris de 2px */
+    border-radius: 23%; /* Sin bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--blaco);
+}
+.titulomo {
+    display: flex;
+    justify-content: center; /* Centra el título */
+    align-items: center;
+    gap: 10px;
+}
+
+.titulomo i {
+    font-size: 30px; /* Tamaño del ícono */
+    color: var(--gris); /* Color del ícono */
+}
+
+.titulomo h2 {
+    font-family: var(--letrati);
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.highlight {
+    font-weight: 700; /* Resalta la parte del texto */
+    color: var(--grisdoscua); /* Color del texto resaltado */
+}
+
+.contenidom {
+    margin-top: 20px;
+    text-align: left; /* Alinea el texto del párrafo a la izquierda */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color:var(--axul);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para el modal */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.close-align {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Título y texto dentro del modal */
+/* Estilo general de la sección gen2 */
+.gen2 {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro para resaltar la sección */
+}
+
+/* Estilo para el título */
+.titulomo2 {
+    margin-bottom: 20px;
+}
+
+.section-title2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Resaltado en parte del título */
+.highlight2 {
+    font-weight: 700;
+    color: #007bff; /* Color azul para resaltar "Our Values" */
+}
+
+/* Estilo para el párrafo de descripción */
+.contenidom2 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px; /* Limita el ancho para evitar que se estire demasiado */
+    margin-left: auto;
+    margin-right: auto; /* Centra el texto */
+}
+
+
+
+/* Mostrar el modal cuando esté activo */
+.modal-background.active {
+    display: flex;
+}
+
+
+.btn-modal:hover {
+    background-color: black; /* Cambia el fondo cuando se pasa el mouse */
+}
+
+/* Fondo del modal */
+.modal-background {
+    display: none; /* Oculto por defecto */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    position: fixed; /* Fijo sobre el contenido */
+    z-index: 10; /* Aparece sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Cubre toda la pantalla */
+    height: 100%;
+    transition: all 0.5s; /* Transición de cambio en el estilo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px; /* Espacio interno */
+}
+
+.modal-content {
+    max-width: 800px; /* Ancho máximo */
+    background-color: #fefefe; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #888; /* Borde gris */
+    overflow: auto; /* Habilita el desplazamiento si es necesario */
+    height: 90vh; /* Altura máxima */
+}
+
+/* Alineación del botón de cierre */
+.close-align {
+    display: flex; /* Flexbox */
+    justify-content: flex-end; /* Botón a la derecha */
+    align-items: center; /* Alineado al centro vertical */
+}
+
+.show-modal {
+    display: flex; /* Muestra el modal */
+}
+
+.close-icon {
+    cursor: pointer; /* Muestra el cursor de clic */
+    color:var(--grisdoscua); /* Color rojo */
+    font-size: 26px; /* Tamaño del ícono de cierre */
+    transition: all 0.5s; /* Transición en el estilo */
+}
+
+.close-icon:hover {
+    color: black; /* Cambia el color al pasar el mouse */
+}
+
+.input-field {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interno */
+    margin: 5px 0 15px; /* Margen arriba y abajo */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.send-button {
+    background-color: #f25c5e; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el cursor de clic */
+}
+
+.send-button:hover {
+    background-color: #d1494f; /* Cambia el fondo al pasar el mouse */
+}
+
+/* parte de carrousel */
+/* Contenedor general del carrusel */
+#carousel {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor disponible */
+    max-width: 100%; /* Evita que el carrusel exceda el ancho disponible */
+    display: flex;
+    flex-direction: column; /* Los elementos internos se apilan en columna */
+    margin: 0 auto; /* Centrado horizontal */
+    position: relative;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+  }
+  
+  /* Contenedor de las diapositivas */
+  #slide-container {
+    scroll-snap-type: x mandatory; /* Activa el "snap" al desplazarse horizontalmente */
+    overflow-x: hidden; /* Permite desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px; /* Espacio entre diapositivas */
+    color: #000;
+    -webkit-overflow-scrolling: touch; /* Habilita desplazamiento suave en dispositivos táctiles */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 0.5px black solid; /* Borde negro alrededor del contenedor de diapositivas */
+  }
+  
+  /* Contenedor externo del carrusel */
+  .Contenedor {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Evita que el contenedor sobrepase el ancho disponible */
+    background: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex;
+    gap: 20px; /* Espacio entre elementos internos */
+  }
+  
+  /* Estilos de cada diapositiva */
+  .slide {
+    padding: 20px;
+    scroll-snap-align: center; /* Alinea la diapositiva en el centro del contenedor al hacer scroll */
+    position: relative;
+    min-width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+    text-align: center;
+  }
+  
+  /* Estilos para las imágenes dentro de cada diapositiva */
+  .slide img {
+    width: 60%;             /* Ajusta el tamaño de la imagen al 60% del contenedor */
+    max-width: 200px;       /* Ancho máximo de la imagen */
+    max-height: 150px;      /* Altura máxima de la imagen */
+    object-fit: cover;      /* Ajusta la imagen sin deformarla */
+    margin-bottom: 10px;    /* Espacio inferior */
+    border-radius: 8px;     /* Bordes redondeados para las imágenes */
+    clip-path: circle(50%); /* Aplica el clip-path circular */
+    display: block;         /* Elimina posibles márgenes adicionales */
+    margin-left: auto;      /* Centra la imagen horizontalmente */
+    margin-right: auto;
+  }
+  
+  /* Encabezado principal de la sección de perfil */
+  .perfil h2 {
+    font-family: var(--letrati);
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  /* Subtítulo de la sección de perfil */
+  .perfil h3 {
+    font-family: var(--letrati);
+    color: var(--a2); /* Color de texto azul */
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  /* Descripción de la sección de perfil */
+  .perfil p {
+    text-align: center;
+    font-size: 1.2em;
+    color:var(--mora); /* Color de texto gris oscuro */
+  }
+  
+  /* Contenedor de los botones de navegación del carrusel */
+  .slide-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Estilos para los botones de navegación (flechas) */
+  .arrow {
+    background-color: var(--gris); /* Fondo amarillo */
+    border: 0.2px solid black;
+    color: var(--blaco); /* Texto negro */
+    text-decoration: none; /* Elimina el subrayado en enlaces */
+    cursor: pointer;
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 1.5em; /* Tamaño del texto */
+    margin: 0 5px; /* Espacio entre botones */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  }
+  
+  .arrow:hover {
+    background-color: #ddd; /* Cambia el fondo al pasar el cursor */
+  }
+  
+  /* Indicadores opcionales de la diapositiva (barra de progreso) */
+  .slide-indicator {
+    display: inline-block;
+    width: 50px; /* Ancho de cada indicador */
+    height: 10px; /* Altura de cada indicador */
+    background-color: #ddd; /* Fondo gris claro */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  }
+  
+  /* Cambios de color para el indicador activo y en hover */
+  .slide-indicator.active,
+  .slide-indicator:hover {
+    background-color: #aaa; /* Fondo gris oscuro */
+  }
+  /* ------------------------------------------ */
+  /* slider */
+/* Contenedor del texto y slider */
+/* Contenedor principal: texto y slider */
+.dis {
+    display: flex;
+    flex-direction: column; /* Acomoda el texto y el slider en columnas */
+    align-items: center; /* Centra horizontalmente el contenido */
+    gap: 20px; /* Espacio entre el texto y el slider */
+    padding: 20px;
+  }
+  
+  /* Estilos del texto */
+  .distin {
+    text-align: center; /* Centra el texto */
+    max-width: 800px; /* Limita el ancho máximo del texto */
+    margin: 0 auto; /* Centrado automático */
+  }
+  
+  .distin h2 {
+    font-size: 2rem;
+    color: #333; /* Color principal del título */
+    margin-bottom: 10px;
+  }
+  
+  .distin p {
+    font-size: 1rem;
+    color: #555; /* Color del texto */
+  }
+  
+  /* Estilo del slider */
+  .slide2 {
+    width: 100%;
+    max-width: 600px; /* Limita el tamaño del slider */
+    height: 400px; /* Altura fija para mantener proporción */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados para el slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del slider */
+  }
+  
+  /* Ajustes de las imágenes */
+  .rslides {
+    width: 100%;
+    height: 100%;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rslides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta las imágenes sin deformarlas */
+  }
+  
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+/* Estilo para las flechas */
+.arrow2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem; /* Ajusta el tamaño de la flecha */
+    color: rgba(255, 255, 255, 0.8); /* Color blanco con algo de transparencia */
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro para que se vean bien */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Flecha izquierda */
+.left-arrow {
+    left: 10px;
+}
+
+/* Flecha derecha */
+.right-arrow {
+    right: 10px;
+}
+
+/* Hover para las flechas */
+.arrow2:hover {
+    background: rgba(0, 0, 0, 0.6); /* Efecto al pasar el ratón */
+}
+/* Ocultar las flechas generadas por ResponsiveSlides.js */
+.rslides_nav {
+    display: none;
+}
+/* Ocultar las flechas generadas por ResponsiveSlides.js */
+.rslides_nav {
+    display: none;
+}
+/* ----------------------------------------------- */
+/* Acordeon */
+/* Container Styling */
+.contenedor2 {
+    display: flex; /* Organiza los hijos en fila */
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 20px;
+}
+
+/* FAQ Section */
+.contenido_fre {
+    flex: 2; /* Ocupa más espacio que Skills */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenido_fre h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.acorde {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acor_titulo {
+    padding: 15px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acor_titulo h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.acor_titulo i {
+    font-size: 20px;
+    color: blue;
+}
+
+.acor_contenido {
+    display: none;
+    padding: 15px 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.acor_contenido p {
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+    flex: 1; /* Ocupa menos espacio que FAQ */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.legal-research {
+    width: 90%;
+    background-color: #007BFF;
+}
+
+.contract-drafting {
+    width: 65%;
+    background-color: #28A745;
+}
+
+.client-advocacy {
+    width: 100%;
+    background-color: #FFC107;
+}
+
+/* ------------------------------------------- */
+/* GALERIA */
+.contenedor3 {
+    background-color: f5f5f5;
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.contenedor_fotos a {
+    filter: brightness(1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.contenedor_fotos a:hover {
+    filter: brightness(0.5);
+}
+.contenedor_fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual ancho */
+    grid-template-rows: repeat(2, 1fr); /* Crea 2 filas de igual alto */
+    gap: 30px; /* Espacio entre las fotos */
+    padding: 10px;
+}
+
+.contenedor_fotos figure {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.contenedor_fotos figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilos para la sección de información */
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info h3 span {
+    color: #ff4048;
+}
+
+.info p {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+.join-btn {
+    background-color: #ff4048;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ----------------------------------- */
+/* VIDEO */
+.contenedor4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra el contenido */
+    padding: 40px; /* Añade espaciado alrededor */
+    background-color: #f9f9f9; /* Fondo suave para la sección */
+    margin: 40px 0; /* Margen superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+}
+
+.info_video {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info_video h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info_video h3 span {
+    color: #007bff; /* Un color destacado para la palabra 'LEGATOR' */
+    font-weight: bold;
+}
+
+.info_video p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px; /* Limita el ancho del párrafo */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cont_video {
+    display: flex;
+    justify-content: center; /* Centra el iframe */
+    margin-top: 20px;
+}
+
+.cont_video iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para el iframe */
+}
