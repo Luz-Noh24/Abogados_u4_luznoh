@@ -90,7 +90,6 @@ body
     height: 900px; /* Altura del contenedor */
 }
 
-
 .pruebita
 {
     display: flex;
@@ -491,7 +490,7 @@ nav ul li a:hover {
   /* Contenedor de las diapositivas */
   #slide-container {
     scroll-snap-type: x mandatory; /* Activa el "snap" al desplazarse horizontalmente */
-    overflow-x: hidden; /* Permite desplazamiento horizontal */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
     overflow-y: hidden; /* Oculta el desplazamiento vertical */
     display: flex;
     justify-content: flex-start;
@@ -1348,7 +1347,7 @@ button:hover {
     position: fixed;  /* Fija el botón en la pantalla */
     bottom: 30px;  /* Coloca el botón a 30px desde el fondo */
     right: 30px;  /* Coloca el botón a 30px desde la derecha */
-    background-color: #3498db;  /* Color de fondo */
+    background-color: var(--negro);  /* Color de fondo */
     color: white;  /* Color del texto */
     font-size: 24px;  /* Tamaño de la flecha */
     width: 50px;  /* Ancho del botón */
