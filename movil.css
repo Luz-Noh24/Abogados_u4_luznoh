@@ -1,0 +1,638 @@
+:root
+{
+    --letranorm:Montserrat, sans-serif;
+    --letrati:Playfair,serif;
+    --gris:#BEBEBE;
+    --negro:#3C3C3C;
+    --grisdoscua:#686157;
+    --blaco:#fff;
+    --mora:#615768;
+    --axul:#6A76A1;
+    --a2:#2a3066 ;
+    --dorado:#f39c12;
+
+
+}
+@media (max-width: 460px) {
+    /* Ajuste para el body */
+    body {
+        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    /* Contact header */
+    .contact-header {
+        flex-direction: column; /* Cambiar la distribución a columna */
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .contact-info {
+        gap: 15px; /* Reducir el espacio entre los elementos */
+        justify-content: center; /* Centrar los elementos */
+    }
+
+    /* Ajuste para los iconos sociales */
+    .social-icons {
+        display: flex; /* Los íconos se alinearán verticalmente */
+        justify-content: space-between; 
+        padding: 15px;
+        gap: 10px; /* Reducir el espacio entre los íconos */
+    }
+
+    .social-icons a {
+        font-size: 10px; /* Reducir el tamaño de los íconos */
+    }
+
+    /* Ajuste en la clase .prueba */
+    .prueba {
+        height: 1200px; /* Reducir la altura del fondo */
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .pruebita {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    /* Logo */
+    .logo img {
+        height: 50px; /* Aumenta el tamaño del logo */
+        margin-right: 15px; 
+    }
+
+    #icono {
+        display: flex; /* Muestra el icono en pantallas pequeñas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia el menú a una columna */
+        /* width: 100%; Asegura que el menú use todo el ancho */
+    }
+
+    nav ul li {
+        margin: 5px; /* Espaciado entre elementos en vertical */
+        text-align: center; /* Centra el texto en los elementos del menú */
+    }
+
+    .text-block {
+        width: 90%; /* Aumenta el ancho para ajustarse mejor a pantallas pequeñas */
+        max-width: none; /* Elimina el límite máximo de anchura */
+        align-items: center; /* Centra el contenido horizontalmente */
+        text-align: center; /* Centra el texto */
+        padding: 10px; /* Reduce el padding para dispositivos pequeños */
+    }
+
+    .title {
+        font-size: 50px; /* Reduce el tamaño del título en pantallas pequeñas */
+        margin-bottom: 15px; /* Ajusta el espacio inferior */
+    }
+
+    .description {
+        font-size: 15px; /* Reduce ligeramente el tamaño del texto */
+        margin-bottom: 15px; /* Ajusta el espacio inferior */
+    }
+
+    .cta-button {
+        padding: 15px 30px; /* Aumenta el tamaño del botón */
+        font-size: 1.2rem; /* Incrementa el tamaño de la fuente */
+        border-radius: 8px; /* Hace las esquinas más redondeadas */
+    }
+
+    .services {
+        padding: 20px 10px; /* Reduce el padding del contenedor principal */
+    }
+
+    .serv-cont {
+        display: flex; /* Usamos flexbox */
+        flex-direction: column; /* Coloca los artículos en una columna */
+        gap: 15px; /* Espacio entre los artículos */
+        justify-content: center; /* Centra los artículos horizontalmente */
+    }
+
+    .services article {
+        max-width: 90%; /* Hace que los artículos sean más anchos en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding interno para una mejor visualización */
+        margin: 0 auto; /* Centra los artículos */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición */
+    }
+
+    .services article i {
+        font-size: 30px; /* Reduce el tamaño del ícono */
+    }
+
+    .services article h3 {
+        font-size: 18px; /* Ajusta el tamaño del título */
+    }
+
+    .services article p {
+        font-size: 14px; /* Ajusta el tamaño de la descripción */
+    }
+
+    /* Efecto hover ajustado para pantallas pequeñas */
+    .services article:hover {
+        transform: scale(1.05); /* Hace el efecto más sutil */
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); /* Aumenta la sombra para mayor profundidad */
+    }
+    /* Ajustar la sección general */
+    .team-profiles {
+        padding: 10px; /* Reducir el padding */
+    }
+
+    /* Ajustes para el contenedor del perfil */
+    .profile {
+        padding: 10px; /* Reducir el padding */
+        max-width: 100%; /* Asegurar que el contenedor se ajuste al ancho de la pantalla */
+    }
+
+    /* Ajustes en el contenedor general */
+    .general {
+        padding: 15px; /* Reducir el padding */
+        max-width: 100%; /* Asegurar que el perfil ocupe todo el ancho */
+        border-radius: 15px; /* Bordes más redondeados en pantallas pequeñas */
+    }
+
+    /* Título */
+    .titulomo {
+        display: flex;
+        flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+        justify-content: center; /* Centrar el título */
+        align-items: center;
+        gap: 5px; /* Reducir el espacio entre el ícono y el título */
+    }
+
+    /* Ajuste de tamaño del ícono en el título */
+    .titulomo i {
+        font-size: 25px; /* Reducir el tamaño del ícono */
+    }
+
+    /* Ajustar tamaño del título */
+    .titulomo h2 {
+        font-size: 22px; /* Reducir el tamaño del título */
+        margin: 0;
+    }
+
+    /* Resaltado */
+    .highlight {
+        font-size: 16px; /* Reducir el tamaño del texto resaltado */
+    }
+     /* Contenido del párrafo */
+     .contenidom {
+        font-size: 14px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+        line-height: 1.5; /* Ajustar la altura de línea */
+        color: var(--blaco); /* Mantener el color del texto */
+        margin-top: 15px; /* Reducir el margen superior */
+    }
+
+    /* Descripción de la sección */
+    .section-description {
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
+
+    /* Botón de contacto */
+    .contact-button {
+        padding: 8px 20px; /* Reducir el padding */
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+        width: 80%; /* Hacer que el botón ocupe el 80% del ancho */
+        margin: 15px auto; /* Ajustar márgenes */
+    }
+
+    /* Hover del botón de contacto */
+    .contact-button:hover {
+        background-color: #004085; /* Cambiar el color de fondo en hover */
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 20px; /* Reducir el padding para pantallas pequeñas */
+        width: 90%; /* Asegurar que el modal ocupe el 90% del ancho */
+        max-width: 100%; /* Asegurar que el modal no exceda el 100% del ancho */
+    }
+
+    /* Icono de cierre */
+    .close-icon {
+        font-size: 25px; /* Reducir el tamaño del icono de cierre */
+    }
+     /* Estilo para la sección gen2 */
+     .gen2 {
+        padding: 30px 15px; /* Reducir el padding para pantallas pequeñas */
+    }
+
+    /* Estilo para el título */
+    .titulomo2 {
+        margin-bottom: 15px; /* Reducir el margen inferior */
+    }
+
+    /* Título principal */
+    .section-title2 {
+        font-size: 24px; /* Reducir el tamaño del título */
+        color: var(--negro);
+        margin: 0;
+    }
+
+    /* Resaltado en parte del título */
+    .highlight2 {
+        font-weight: 700;
+        color: var(--axul); /* Mantener el color azul */
+    }
+
+    /* Estilo para el párrafo de descripción */
+    .contenidom2 {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        line-height: 1.4; /* Ajustar la altura de línea */
+        margin-top: 15px; /* Reducir el margen superior */
+        max-width: 100%; /* Asegurar que el párrafo ocupe todo el ancho disponible */
+        margin-left: 10px; /* Ajustar márgenes para evitar que se quede muy pegado a los bordes */
+        margin-right: 10px;
+    }
+    * Mostrar el modal cuando esté activo */
+    .modal-background.active {
+        display: flex;
+    }
+
+    /* Fondo del modal */
+    .modal-background {
+        display: none; /* Oculto por defecto */
+        justify-content: center; /* Centrado horizontal */
+        align-items: center; /* Centrado vertical */
+        position: fixed; /* Fijo sobre el contenido */
+        z-index: 10; /* Aparece sobre otros elementos */
+        left: 0;
+        top: 0;
+        width: 100%; /* Cubre toda la pantalla */
+        height: 100%;
+        transition: all 0.5s; /* Transición de cambio en el estilo */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        padding: 10px; /* Espacio interno */
+    }
+
+    /* Ajustes para el contenido del modal */
+    .modal-content {
+        max-width: 90%; /* Cambiar el máximo ancho para adaptarse mejor a pantallas pequeñas */
+        width: 100%; /* Asegura que el modal ocupe todo el ancho disponible */
+        background-color: #fefefe; /* Fondo blanco */
+        padding: 15px; /* Reducir el espacio interno */
+        border: 1px solid #888; /* Borde gris */
+        overflow: hidden; /* Habilita el desplazamiento si es necesario */
+        height: auto; /* Altura automática según el contenido */
+        max-height: 80vh; /* Asegura que el modal no sea demasiado alto */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    /* Alineación del botón de cierre */
+    .close-align {
+        display: flex; /* Flexbox */
+        justify-content: flex-end; /* Botón a la derecha */
+        align-items: center; /* Alineado al centro vertical */
+    }
+
+    .close-icon {
+        font-size: 25px; /* Reducir el tamaño del icono de cierre */
+        cursor: pointer; /* Indicar que es interactivo */
+    }
+
+    /* Ajustes para el botón de mostrar modal */
+    .show-modal {
+        display: flex; /* Muestra el modal */
+    }
+
+    /* Botón de abrir el modal */
+    .btn-modal {
+        padding: 10px 20px; /* Aumentar el tamaño del botón */
+        font-size: 14px; /* Ajustar el tamaño del texto */
+        border-radius: 5px; /* Bordes redondeados */
+        background-color: var(--axul); /* Color de fondo */
+        color: white; /* Texto blanco */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-modal:hover {
+        background-color: #0056b3; /* Cambiar color al pasar el ratón */
+    }
+     /* Icono de cierre */
+     .close-icon {
+        font-size: 22px; /* Reducir el tamaño del ícono en pantallas pequeñas */
+        color: var(--grisdoscua); /* Asegura el color consistente */
+    }
+
+    .close-icon:hover {
+        color: black; /* Cambia el color al pasar el mouse */
+    }
+
+    /* Campo de entrada */
+    .input-field {
+        width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
+        padding: 8px; /* Reduce el padding para ahorrar espacio */
+        margin: 5px 0 12px; /* Ajuste de márgenes para pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    /* Botón de envío */
+    .send-button {
+        background-color: var(--axul); /* Fondo del botón */
+        color: #fff; /* Color del texto */
+        padding: 12px 25px; /* Aumenta el espacio interno */
+        font-size: 14px; /* Ajuste de tamaño de la fuente */
+        width: 100%; /* Botón de ancho completo */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Muestra el cursor de clic */
+    }
+
+    .send-button:hover {
+        background-color: var(--mora); /* Cambia el fondo al pasar el mouse */
+    }
+    /* carrusel */
+
+    #carousel {
+        flex-direction: column; /* Mantén la columna, pero ajusta para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding para dar más espacio al contenido */
+        width: 100%;
+        margin: 0; /* Elimina márgenes para usar todo el espacio disponible */
+      }
+    
+      /* Contenedor de las diapositivas */
+      #slide-container {
+        flex-direction: column; /* Cambia la disposición a columna */
+        scroll-snap-type: y mandatory; /* Habilita el scroll snap vertical */
+        overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+        gap: 5px; /* Espacio entre las diapositivas */
+        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+      }
+    
+      /* Contenedor externo */
+      .Contenedor {
+        flex-direction: column; /* Cambia a disposición vertical para pantallas pequeñas */
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+        padding: 10px; /* Reduce el padding para aprovechar el espacio */
+      }
+    
+      /* Diapositiva individual */
+      .Contenedor > div {
+        width: 100%; /* Asegura que las diapositivas ocupen todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+      }
+      /* Estilos de cada diapositiva */
+  .slide {
+    padding: 10px; /* Reduce el padding para aprovechar mejor el espacio */
+    min-width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+    text-align: center;
+  }
+
+  /* Estilos para las imágenes dentro de cada diapositiva */
+  .slide img {
+    width: 80%; /* Aumenta el tamaño de la imagen al 80% del contenedor */
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 220px; /* Ajusta la altura máxima de la imagen */
+    object-fit: cover; /* Mantiene el recorte adecuado de la imagen */
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    clip-path: circle(50%); /* Mantiene la imagen circular */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+  }
+  /* Encabezado principal de la sección de perfil */
+  .perfil h2 {
+    font-size: 1.5em; /* Reduce el tamaño del texto en pantallas pequeñas */
+    margin: 8px 0; /* Ajusta los márgenes */
+  }
+
+  /* Subtítulo de la sección de perfil */
+  .perfil h3 {
+    font-size: 1.5em; /* Reduce el tamaño del texto */
+    margin: 8px 0; /* Ajusta los márgenes */
+  }
+
+  /* Descripción de la sección de perfil */
+  .perfil p {
+    font-size: 1em; /* Reduce el tamaño del texto */
+    margin: 10px 0; /* Ajusta los márgenes */
+  }
+
+  /* Contenedor de los botones de navegación del carrusel */
+  .slide-buttons {
+    flex-direction: column; /* Los botones se apilan verticalmente */
+    gap: 10px; /* Espacio entre los botones */
+    padding: 15px 0; /* Aumenta el padding para una mejor visualización */
+  }
+
+  /* Estilos para los botones de navegación (flechas) */
+  .arrow {
+    padding: 8px 12px; /* Reduce el padding para ahorrar espacio */
+    font-size: 1.2em; /* Reduce el tamaño del icono */
+  }
+
+  /* Indicadores opcionales de la diapositiva (barra de progreso) */
+  .slide-indicator {
+    width: 40px; /* Reduce el ancho del indicador */
+    height: 8px; /* Ajusta la altura del indicador */
+  }
+  /* slideeer */
+   /* Se ajustan el tamaño de la sección y el texto para pantallas más pequeñas */
+   .dis {
+    padding: 15px; /* Reduce el padding */
+    gap: 10px; /* Reduce el espacio entre los elementos */
+}
+
+/* La sección de texto ocupa un 90% del ancho en lugar de 80% */
+.distin {
+    width: 90%;
+    padding: 15px; /* Ajusta el padding en pantallas pequeñas */
+}
+
+/* El título se hace más pequeño */
+.distin h2 {
+    font-size: 1.5rem; /* Reduce el tamaño de fuente */
+}
+* Contenedor principal ajustado */
+    .contenedor2 {
+        flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+        padding: 10px; /* Reduce el relleno */
+    }
+
+    /* Ajustes en el título */
+    .contenido_fre h1 {
+        font-size: 24px; /* Tamaño más pequeño del título */
+        margin-bottom: 10px; /* Reduce el margen */
+    }
+
+    /* Estilo para cada acordeón */
+    .acorde {
+        margin-bottom: 8px; /* Reduce el espacio entre los acordeones */
+    }
+
+    /* Título del acordeón */
+    .acor_titulo {
+        padding: 12px 15px; /* Reduce el relleno */
+    }
+
+    /* Font-size más pequeño para el título dentro del acordeón */
+    .acor_titulo h2 {
+        font-size: 16px;
+    }
+
+    /* Tamaño del ícono */
+    .acor_titulo i {
+        font-size: 18px; /* Reduce el tamaño del ícono */
+    }
+
+    /* Contenido del acordeón */
+    .acor_contenido {
+        padding: 12px 15px; /* Reduce el relleno del contenido */
+    }
+
+    /* Ajuste en el párrafo dentro del acordeón */
+    .acor_contenido p {
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+        line-height: 1.4;
+    }
+     /* Contenedor principal */
+     .contenedor3 {
+        flex-direction: column; /* Cambia la disposición de flex a columna */
+        padding: 10px; /* Reduce el espacio de relleno */
+        gap: 10px; /* Reduce el espacio entre la galería y la información */
+    }
+
+    /* Contenedor de fotos */
+    .contenedor_fotos {
+        grid-template-columns: repeat(1, 1fr); /* Solo una columna en pantallas pequeñas */
+        grid-template-rows: auto; /* Las filas se ajustan al contenido */
+        gap: 10px; /* Reduce el espacio entre las imágenes */
+    }
+
+    .contenedor_fotos figure {
+        width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+        height: auto; /* Altura automática según la proporción de la imagen */
+    }
+
+    .contenedor_fotos figure img {
+        height: 200px; /* Ajusta la altura para que se vea mejor en pantallas pequeñas */
+    }
+
+    /* Ajustes en la sección de información */
+    .info {
+        padding: 10px; /* Reduce el relleno en la sección de información */
+    }
+
+    .info h2 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .info h3 {
+        font-size: 18px; /* Tamaño de fuente más pequeño para el subtítulo */
+    }
+
+    .info p {
+        font-size: 14px; /* Reduce el tamaño del párrafo */
+    }
+
+    .join-btn {
+        padding: 8px 16px; /* Reduce el tamaño del botón */
+        font-size: 14px; /* Tamaño de fuente más pequeño para el botón */
+    }
+     /* Contenedor principal */
+     .tos {
+        flex-direction: column; /* Cambia la disposición de flex a columna */
+        gap: 10px; /* Reduce el espacio entre formulario y perfiles */
+        padding: 20px; /* Reduce el espacio de relleno */
+    }
+
+    /* Formulario */
+    #contact {
+        width: 100%; /* El formulario ocupa el 100% del contenedor */
+        padding: 20px; /* Reduce el padding */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Reduce el espacio entre los grupos */
+    }
+
+    /* Perfiles */
+    .team-profile {
+        flex-direction: column; /* Los perfiles se apilan en una sola columna */
+        width: 100%; /* Asegura que los perfiles ocupen el 100% */
+    }
+
+    .profiles {
+        width: 100%; /* Asegura que cada perfil ocupe el 100% */
+        margin-bottom: 20px; /* Espacio entre los perfiles */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .profiles img {
+        max-width: 120px; /* Reduce el tamaño de la imagen */
+        height: 120px; /* Ajusta la altura de la imagen */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Reduce el tamaño del título en los perfiles */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto en los perfiles */
+    }
+
+    .social-icon a {
+        font-size: 1.2rem; /* Ajusta el tamaño de los íconos sociales */
+    }
+
+    .contact-button {
+        width: 100%; /* El botón ocupa todo el ancho */
+        font-size: 0.9rem; /* Reduce el tamaño del botón */
+    }
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* Los elementos del footer se apilan en columna */
+        align-items: center; /* Centra los elementos */
+        padding: 20px; /* Reduce el padding */
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%; /* Asegura que cada sección ocupe el 100% del contenedor */
+        text-align: center; /* Centra el texto */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .footer-left h1 {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    .footer-middle h2, .footer-right h2 {
+        font-size: 16px; /* Reduce el tamaño de los subtítulos */
+    }
+
+    ul li a {
+        font-size: 14px; /* Ajusta el tamaño de los enlaces */
+    }
+
+    input[type="email"] {
+        width: 100%; /* El campo de correo ocupa el 100% */
+        margin-bottom: 10px; /* Espacio entre el campo y el botón */
+    }
+
+    button {
+        width: 100%; /* El botón ocupa el 100% */
+        padding: 12px; /* Ajuste del padding */
+        font-size: 16px; /* Ajuste del tamaño del texto */
+    }
+
+    .footer-bottom {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Ajusta el tamaño de los iconos sociales */
+    }
+
+    /* Botón de volver arriba */
+    .arriba {
+        width: 45px; /* Reduce el tamaño del botón */
+        height: 45px; /* Reduce el tamaño del botón */
+        font-size: 18px; /* Reduce el tamaño del ícono */
+    }
+}

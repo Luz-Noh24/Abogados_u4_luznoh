@@ -14,6 +14,7 @@
     --mora:#615768;
     --axul:#6A76A1;
     --a2:#2a3066 ;
+    --dorado:#f39c12;
 
 
 }
@@ -78,7 +79,7 @@ body
   
   .social-icons a:hover 
   {
-    color: #1e90ff; /* Color al pasar el cursor */
+    color: var(--dorado); /* Color al pasar el cursor */
   }
   .prueba {
     background-image: url('imagenes/backgund.jpg');
@@ -110,7 +111,7 @@ body
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: #ff4048;
+    background-color: var(--dorado);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -141,7 +142,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff4048;
+    color: var(--dorado);
     border-bottom: 2px solid --gris;
 }
 
@@ -177,7 +178,7 @@ nav ul li a:hover {
 
 /* Botón */
 .cta-button {
-    background-color: #ff4048;
+    background-color: var(--a2);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -189,7 +190,7 @@ nav ul li a:hover {
 
 /* Efecto al pasar el cursor sobre el botón */
 .cta-button:hover {
-    background-color: #d6333c;
+    background-color: var(--dorado);
 }
 
 /* Contenedor principal */
@@ -229,14 +230,14 @@ nav ul li a:hover {
 .services article h3 {
     font-family: var(--letrati);
     font-size: 20px; /* Tamaño de fuente del título */
-    color: #333; /* Color del texto */
+    color: var(--mora); /* Color del texto */
     margin-bottom: 10px; /* Espaciado debajo del título */
 }
 
 /* Descripción */
 .services article p {
     font-size: 16px; /* Tamaño de fuente del párrafo */
-    color: #666; /* Color del texto */
+    color: var(--negro); /* Color del texto */
     line-height: 1.5; /* Altura de línea para mejor legibilidad */
 }
 
@@ -245,7 +246,7 @@ nav ul li a:hover {
     transform: scale(2.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
 }
-
+/* modal */
 /* Estilo general de la sección */
 .team-profiles {
     padding: 20px;
@@ -267,13 +268,15 @@ nav ul li a:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--blaco);
+    background-color: var(--grisdoscua);
+    
 }
 .titulomo {
     display: flex;
     justify-content: center; /* Centra el título */
     align-items: center;
     gap: 10px;
+   
 }
 
 .titulomo i {
@@ -285,13 +288,13 @@ nav ul li a:hover {
     font-family: var(--letrati);
     font-size: 28px;
     font-weight: 600;
-    color: #333;
+    color:var(--blaco);
     margin: 0;
 }
 
 .highlight {
     font-weight: 700; /* Resalta la parte del texto */
-    color: var(--grisdoscua); /* Color del texto resaltado */
+    color: var(--blaco); /* Color del texto resaltado */
 }
 
 .contenidom {
@@ -299,7 +302,10 @@ nav ul li a:hover {
     text-align: left; /* Alinea el texto del párrafo a la izquierda */
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    color: var(--blaco);
+}
+.section-description{
+    color: var(--blaco);
 }
 
 .contact-button {
@@ -371,14 +377,14 @@ nav ul li a:hover {
 .section-title2 {
     font-size: 28px;
     font-weight: 600;
-    color: #333;
+    color: var(--negro);
     margin: 0;
 }
 
 /* Resaltado en parte del título */
 .highlight2 {
     font-weight: 700;
-    color: #007bff; /* Color azul para resaltar "Our Values" */
+    color: var(--axul); /* Color azul para resaltar "Our Values" */
 }
 
 /* Estilo para el párrafo de descripción */
@@ -387,19 +393,16 @@ nav ul li a:hover {
     text-align: left;
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
+    color: var(--negro);
     max-width: 800px; /* Limita el ancho para evitar que se estire demasiado */
     margin-left: auto;
     margin-right: auto; /* Centra el texto */
 }
 
-
-
 /* Mostrar el modal cuando esté activo */
 .modal-background.active {
     display: flex;
 }
-
 
 .btn-modal:hover {
     background-color: black; /* Cambia el fondo cuando se pasa el mouse */
@@ -461,7 +464,7 @@ nav ul li a:hover {
 }
 
 .send-button {
-    background-color: #f25c5e; /* Fondo del botón */
+    background-color:var(--axul); /* Fondo del botón */
     color: #fff; /* Color del texto */
     padding: 10px 20px; /* Espacio interno */
     border: none; /* Sin borde */
@@ -470,7 +473,7 @@ nav ul li a:hover {
 }
 
 .send-button:hover {
-    background-color: #d1494f; /* Cambia el fondo al pasar el mouse */
+    background-color: var(--mora); /* Cambia el fondo al pasar el mouse */
 }
 
 /* parte de carrousel */
@@ -601,104 +604,132 @@ nav ul li a:hover {
   }
   /* ------------------------------------------ */
   /* slider */
-/* Contenedor del texto y slider */
-/* Contenedor principal: texto y slider */
+/* Contenedor principal */
+/* Contenedor principal */
 .dis {
     display: flex;
-    flex-direction: column; /* Acomoda el texto y el slider en columnas */
-    align-items: center; /* Centra horizontalmente el contenido */
-    gap: 20px; /* Espacio entre el texto y el slider */
-    padding: 20px;
-  }
-  
-  /* Estilos del texto */
-  .distin {
-    text-align: center; /* Centra el texto */
-    max-width: 800px; /* Limita el ancho máximo del texto */
-    margin: 0 auto; /* Centrado automático */
-  }
-  
-  .distin h2 {
-    font-size: 2rem;
-    color: #333; /* Color principal del título */
-    margin-bottom: 10px;
-  }
-  
-  .distin p {
-    font-size: 1rem;
-    color: #555; /* Color del texto */
-  }
-  
-  /* Estilo del slider */
-  .slide2 {
-    width: 100%;
-    max-width: 600px; /* Limita el tamaño del slider */
-    height: 400px; /* Altura fija para mantener proporción */
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    border-radius: 10px; /* Bordes redondeados para el slider */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del slider */
-  }
-  
-  /* Ajustes de las imágenes */
-  .rslides {
-    width: 100%;
-    height: 100%;
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .rslides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta las imágenes sin deformarlas */
-  }
-  
-.rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
+    justify-content: center;
+    height: 100vh; /* Altura de la ventana */
+    background-color: #f4f4f4;
+    padding: 20px;
+    gap: 20px; /* Espaciado entre el texto y el slider */
 }
 
-/* Estilo para las flechas */
-.arrow2 {
+/* Estilo para la sección de texto */
+.distin {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+/* Efecto al pasar el mouse en la sección de texto */
+.distin:hover {
+    transform: scale(1.05) rotate(1deg); /* Zoom y ligera rotación */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    background-color: rgba(255, 255, 255, 1); /* Fondo un poco más claro */
+}
+
+/* Título */
+.distin h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.3s ease; /* Transición del color del texto */
+}
+
+.distin h2:hover {
+    color: #ff4048; /* Cambia a rojo al pasar el mouse */
+}
+
+/* Párrafo */
+.distin p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.distin p:hover {
+    color: #333;
+}
+
+/* Contenedor del slider */
+.slide-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slide2 {
+    position: relative;
+    width: 80%; /* Igual que el texto */
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efecto al pasar el mouse en el slider */
+.slide2:hover {
+    transform: scale(1.02); /* Zoom leve */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Imágenes del slider */
+.rslides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transición en las imágenes */
+}
+
+/* Efecto de transformación al pasar el mouse sobre las imágenes */
+.rslides img:hover {
+    transform: scale(1.05); /* Zoom suave */
+}
+
+/* Flechas de navegación */
+.control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem; /* Ajusta el tamaño de la flecha */
-    color: rgba(255, 255, 255, 0.8); /* Color blanco con algo de transparencia */
-    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro para que se vean bien */
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
     z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Flecha izquierda */
-.left-arrow {
+.control.prev {
     left: 10px;
 }
 
 /* Flecha derecha */
-.right-arrow {
+.control.next {
     right: 10px;
 }
 
-/* Hover para las flechas */
-.arrow2:hover {
-    background: rgba(0, 0, 0, 0.6); /* Efecto al pasar el ratón */
+/* Efecto al pasar el mouse sobre las flechas */
+.control:hover {
+    transform: scale(1.2); /* Zoom */
+    background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
 }
-/* Ocultar las flechas generadas por ResponsiveSlides.js */
-.rslides_nav {
-    display: none;
-}
-/* Ocultar las flechas generadas por ResponsiveSlides.js */
-.rslides_nav {
-    display: none;
-}
+
+
 /* ----------------------------------------------- */
 /* Acordeon */
 /* Container Styling */
@@ -876,7 +907,8 @@ nav ul li a:hover {
 }
 
 .info h3 span {
-    color: #ff4048;
+    color: var(--dorado);
+    font-family: var(--letrati);
 }
 
 .info p {
@@ -886,7 +918,7 @@ nav ul li a:hover {
 }
 
 .join-btn {
-    background-color: #ff4048;
+    background-color: var(--dorado);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -941,4 +973,401 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Bordes redondeados para el iframe */
+}
+/* ---------------------------------- */
+#service2 {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#service2 h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.serv-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 30px;
+    justify-items: center; /* Centra los artículos en cada celda */
+    transition: all 0.3s ease-in-out;
+}
+
+.sev{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px); /* Los artículos comenzarán desplazados hacia abajo */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición de transformaciones */
+}
+
+/* Cuando el artículo sea visible, se mueve hacia su posición original */
+.sev.visible {
+    opacity: 1;
+    transform: translateY(0); /* Se mueve hacia su posición original */
+}
+
+.sev i {
+    font-size: 2.5rem;
+    color: #ff4048;
+    margin-bottom: 20px;
+}
+
+.sev h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sev p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Efecto de escala y transformación al pasar el mouse */
+.sev:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
+}
+
+/* Parallax Background */
+.fondopr {
+    background-image: url('imagenes/legalor-bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija el fondo para el efecto parallax */
+    background-position: center;
+    height: 900px; /* Altura del contenedor */
+    position: relative; /* Para poder colocar el contenido encima */
+}
+
+/* Contenedor de contenido */
+.fond {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido se muestre encima del fondo */
+    padding: 50px 20px; /* Un poco de espaciado para el contenido */
+    color: #fff; /* Color del texto para que contraste */
+    text-align: center; /* Centra el contenido */
+    max-width: 500px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Efecto de parallax en el texto */
+.fond h1 {
+    font-size: 2.5rem; /* Ajustar el tamaño del título */
+    margin-bottom: 15px; /* Menos espacio entre el título y el párrafo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+/* Efecto de parallax en el texto */
+.fond p {
+    font-size: 1rem; /* Ajustar el tamaño del párrafo */
+    line-height: 1.6;
+    max-width: 700px; /* Limitar el ancho del párrafo */
+    margin: 0 auto; /* Centrar el párrafo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Efecto de parallax en la imagen */
+.fond figure {
+    position: relative;
+    z-index: 3; /* Asegura que la imagen se muestre encima del fondo */
+    margin-bottom: 20px; /* Espaciado más pequeño debajo de la imagen */
+    max-width: 100px; /* Limitar el ancho máximo de la imagen */
+    margin-left: auto; /* Centrar la imagen */
+    margin-right: auto; /* Centrar la imagen */
+}
+
+.fond img {
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    max-width: 100%; /* Limitar el ancho al máximo especificado en figure */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.fond img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Efecto de parallax al hacer scroll */
+@keyframes scrollEffect {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Aplicar movimiento suave de parallax al contenido */
+.fond h1, .fond p, .fond figure {
+    animation: scrollEffect 0.5s ease-out infinite alternate;
+}
+
+/* form y personas */
+/* Estilo general del formulario */
+/* Contenedor general para la fila */
+.tos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre el formulario y los perfiles */
+    padding: 40px;
+  }
+  
+  /* Estilo general del formulario */
+  #contact {
+    width: 48%; /* Ocupa el 48% del contenedor */
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los grupos de formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .butt {
+    background-color: #ff4048;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .butt:hover {
+    background-color: #e63e3e;
+  }
+  
+  /* Estilo para la sección de los perfiles */
+  .team-profile {
+    display: flex;
+    justify-content: space-between;
+    width: 48%; /* Ocupa el 48% del contenedor */
+    flex-wrap: wrap;
+  }
+  
+  .profiles {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profiles:hover {
+    transform: scale(1.05);
+  }
+  
+  .profiles img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .social-icon a {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-icon a:hover {
+    color: #ff4048;
+  }
+  
+  .contact-button {
+    background-color: var(--axul);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .contact-button:hover {
+    background-color: var(--mora);
+  }
+ 
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-left h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-middle h2, .footer-right h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-middle p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul li a:hover {
+    color: #f39c12;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+.arriba {
+    position: fixed;  /* Fija el botón en la pantalla */
+    bottom: 30px;  /* Coloca el botón a 30px desde el fondo */
+    right: 30px;  /* Coloca el botón a 30px desde la derecha */
+    background-color: #3498db;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    font-size: 24px;  /* Tamaño de la flecha */
+    width: 50px;  /* Ancho del botón */
+    height: 50px;  /* Alto del botón */
+    border: none;  /* Sin borde */
+    border-radius: 50%;  /* Hacer el botón redondeado */
+    display: flex;  /* Usamos Flexbox para centrar el contenido */
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;  /* Centrado vertical */
+    cursor: pointer;  /* Cambia el cursor cuando pasa sobre el botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Sombra para dar profundidad */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Transición para color y animación */
+}
+
+.arriba:hover {
+    background-color: #2980b9;  /* Cambio de color cuando el ratón pasa sobre el botón */
+    transform: scale(1.1);  /* Agranda el botón al pasar el ratón */
+}
+
+.arriba:focus {
+    outline: none;  /* Elimina el contorno cuando se hace clic en el botón */
 }
